@@ -1,0 +1,95 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Freedom Security Solutions'
+# for smart copyright line, leave this blank and check [params.copyright]
+copyright = ""
+
+Paginate = 5
+preserveTaxonomyNames = false
+
+enableRobotsTXT = true # generate robots.txt
+
+# Missing translations will default to this content language
+defaultContentLanguage = "en"
+
+[params.info]
+description = "Minimalist theme for Hugo"
+title404 = "Page Not Found"
+
+[params]
+description = "Site stuff for being a good site with internet tubez."
+pagetitle = "Hello"
+noindex_kinds = [
+  "taxonomy",
+  "taxonomyTerm"
+]
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params.assets]
+favicon = "favicon.ico"
+gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+
+[params.copyright]
+prefix = ""
+holder = "Freedom Security Solutions"
+startYear = "2022"
+suffix = ""
+
+[params.settings]
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "Jan 02, 2006"
+listDateFormat = "Jan 02, 2006"
+hideEntryNavigation = ["page"] # boolean / array of sections
+hideSocialMenu = false
+showReadingTime = true
+
+[params.seo]
+# Title Separator: - – — · • * ⋆ | ~ « » < >
+titleSeparator = "•"
+
+[params.social]
+email = "josh@digitalcloudnw.com"
+instagram = "digitalcloudnw"
+facebook = "digitalcloudnw"
+
+[params.social.config]
+platforms = ["facebook","instagram","email"]
+
+[permalinks]
+page = "/:slug/"
+
+[[menu.main]]
+name = "Portfolio"
+weight = 1
+identifier = "Portfolio"
+url = "portfolio"
+
+[[menu.main]]
+name = "About"
+weight = 2
+identifier = "About"
+url = "about"
+
+[[menu.main]]
+name = "Blog"
+weight = 3
+identifier = "Blog"
+url = "blog"
+
+[[menu.main]]
+name = "Contact"
+weight = 4
+identifier = "Contact"
+class = "contact"
+url = "contact"
+
+[blackfriday]
+hrefTargetBlank = true
+
+[languages]
+# edit this block for your own language
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
