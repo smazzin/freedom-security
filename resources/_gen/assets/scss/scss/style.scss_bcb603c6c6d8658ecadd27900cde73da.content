@@ -4204,14 +4204,14 @@ ol {
   display: none; }
   @media (min-width: 576px) {
     .logo {
-      display: flex; } }
+      display: block; } }
   .logo a {
     display: block; }
   .logo img {
     width: auto; }
 
 .logo-mobile {
-  display: flex; }
+  display: block; }
   @media (min-width: 576px) {
     .logo-mobile {
       display: none; } }
@@ -4646,6 +4646,17 @@ ol {
     display: inline-block; }
     .social a:hover {
       opacity: 0.8; }
+
+.content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
 
 .team-summary {
   display: flex;

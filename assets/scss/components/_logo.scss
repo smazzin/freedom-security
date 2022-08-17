@@ -1,7 +1,7 @@
 .logo {
   display: none;
   @include media-breakpoint-up(sm) {
-    display: flex;
+    display: block;
   }
   a {
     display: block;
@@ -11,7 +11,7 @@
   }
 }
 .logo-mobile {
-  display: flex;
+  display: block;
   @include media-breakpoint-up(sm) {
     display: none;
   }
