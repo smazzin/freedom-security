@@ -1,95 +1,81 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'Freedom Security Solutions'
-# for smart copyright line, leave this blank and check [params.copyright]
-copyright = ""
+baseURL = "/"
+languageCode = "en-us"
+title = "Freedom Security Solutions"
 
-Paginate = 5
-preserveTaxonomyNames = false
-
-enableRobotsTXT = true # generate robots.txt
-
-# Missing translations will default to this content language
-defaultContentLanguage = "en"
-
-[params.info]
-description = "Minimalist theme for Hugo"
-title404 = "Page Not Found"
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
 
 [params]
-description = "Site stuff for being a good site with internet tubez."
-pagetitle = "Hello"
-noindex_kinds = [
-  "taxonomy",
-  "taxonomyTerm"
-]
+  # In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
+  google_analytics_id = ""
+  google_tag_manager_id = ""
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+  [params.homepage]
+    show_contact_box = false     # show / hide the contaxt box on the homepage
+    show_services_button = false # show / hide the "view all services" button
 
-[params.assets]
-favicon = "favicon.ico"
-gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+  [params.logo]
+    mobile = "images/logo/freedom-security-solutions.png"
+    mobile_height = "96px"
+    desktop = "images/logo/freedom-security-solutions.png"
+    desktop_height = "196px"
+    alt = "Freedom Security Solutions"
 
-[params.copyright]
-prefix = ""
-holder = "Freedom Security Solutions"
-startYear = "2022"
-suffix = ""
+  [params.fonts]
+    # sets the google font link in layouts/partials/google-fonts.html
+    google_fonts = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap'
+    heading = "Playfair Display"
+    base = "Source Sans Pro"
 
-[params.settings]
-# date & time format: https://golang.org/pkg/time/
-dateFormat = "Jan 02, 2006"
-listDateFormat = "Jan 02, 2006"
-hideEntryNavigation = ["page"] # boolean / array of sections
-hideSocialMenu = false
-showReadingTime = true
+  [params.colors]
+    primary = "#0079B3"
+    black = "#000514"
+    white = "#ffffff"
+    white_offset = "#B9BABF"
+    grey = "#434752"
 
-[params.seo]
-# Title Separator: - – — · • * ⋆ | ~ « » < >
-titleSeparator = "•"
+  # [params.seo]
+  #   meta_twitter_site = "@zerostaticio"
+  #   meta_twitter_creator = "@zerostaticio"
+  #   meta_og_image = "https://www.zerostatic.io/theme/hugo-serif/hugo-serif-screenshot.png"
 
-[params.social]
-email = "josh@digitalcloudnw.com"
-instagram = "digitalcloudnw"
-facebook = "digitalcloudnw"
+  [params.team]
+    summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
-[params.social.config]
-platforms = ["facebook","instagram","email"]
+  [params.footer]
+    copyright_text = 'Freedom Security Solutions'
 
-[permalinks]
-page = "/:slug/"
+[menu]
+  # Main Menu
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 1
 
-[[menu.main]]
-name = "Portfolio"
-weight = 1
-identifier = "Portfolio"
-url = "portfolio"
+  [[menu.main]]
+    name = "Team"
+    url = "/team/"
+    weight = 2
 
-[[menu.main]]
-name = "About"
-weight = 2
-identifier = "About"
-url = "about"
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
 
-[[menu.main]]
-name = "Blog"
-weight = 3
-identifier = "Blog"
-url = "blog"
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
 
-[[menu.main]]
-name = "Contact"
-weight = 4
-identifier = "Contact"
-class = "contact"
-url = "contact"
+  # Footer Menu
+  [[menu.footer]]
+    name = "Home"
+    url = "/"
+    weight = 1
 
-[blackfriday]
-hrefTargetBlank = true
-
-[languages]
-# edit this block for your own language
-[languages.en]
-lang = "en"
-languageName = "English"
-weight = 1
+  [[menu.footer]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 2
