@@ -2,11 +2,6 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Freedom Security Solutions"
 
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.55.0"
-
 [params]
   # In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
   google_analytics_id = ""
@@ -23,24 +18,6 @@ title = "Freedom Security Solutions"
     desktop_height = "196px"
     alt = "Freedom Security Solutions"
 
-  [params.fonts]
-    # sets the google font link in layouts/partials/google-fonts.html
-    google_fonts = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap'
-    heading = "Playfair Display"
-    base = "Source Sans Pro"
-
-  [params.colors]
-    primary = "#0079B3"
-    black = "#000514"
-    white = "#ffffff"
-    white_offset = "#B9BABF"
-    grey = "#434752"
-
-  # [params.seo]
-  #   meta_twitter_site = "@zerostaticio"
-  #   meta_twitter_creator = "@zerostaticio"
-  #   meta_og_image = "https://www.zerostatic.io/theme/hugo-serif/hugo-serif-screenshot.png"
-
   [params.team]
     summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
@@ -50,18 +27,18 @@ title = "Freedom Security Solutions"
 [menu]
   # Main Menu
   [[menu.main]]
-    name = "Services"
-    url = "/services/"
+    name = "About Us"
+    url = "/about-us/"
     weight = 1
 
   [[menu.main]]
-    name = "Team"
-    url = "/team/"
+    name = "Work With Us"
+    url = "/work-with-us/"
     weight = 2
 
   [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Services"
+    url = "#"
     weight = 3
 
   [[menu.main]]

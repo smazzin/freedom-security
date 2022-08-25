@@ -1,0 +1,30 @@
+@use "sass:map";
+
+// blues
+$blue: 									#0079B3;
+
+// blacks
+$black:									#000514;
+
+// grays
+$gray: 									#434752;
+
+// white
+$white:									#ffffff;
+$white-offset:					#B9BABF;
+
+$colors: (
+	"blue": (
+		"base": $blue,
+	),
+	"black": (
+		"base": $black
+	),
+	"gray": (
+		"base": $gray
+	),
+	"white": (
+		"base": $white,
+		"offset": $white-offset
+	)
+)

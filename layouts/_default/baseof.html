@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="{{ "favicon-32x32.svg" | relURL }}">
 
+  {{ partial "google-fonts.html" . }}
+
   <!-- CSS-->
   {{ $css_options := dict "targetPath" "css/style.css" "enableSourceMap" (not hugo.IsProduction) }}
   {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS $css_options }}
@@ -33,10 +35,28 @@
 </head>
 
 <body class='page {{ block "body_classes" . }}{{ end }}'>
-  <div class="container">
+  {{ partial "main-menu-mobile.html" . }}
+  <div class="wrapper">
+    {{ partial "header.html" . }}
     {{ block "main" . }}
     {{ end }}
   </div>
+
+  {{ partial "footer.html" . }}
+  {{ partial "sub-footer.html" . }}
+
+  {{ $scripts := resources.Get "js/scripts.js" }}
+
+  {{ block "footer_js" . }}
+  {{ end }}
+
+  {{ if hugo.IsProduction }}
+    {{ $scripts = $scripts | minify | fingerprint }}
+  {{ end }}
+  <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+
+  {{ partial "google-tag-manager.html" . }}
+  {{ partial "google-analytics.html" . }}
 </body>
 
 </html>
