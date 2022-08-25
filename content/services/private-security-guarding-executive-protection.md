@@ -2,8 +2,10 @@
 title: "Private Security, Security Guarding, Executive Protection"
 date: 2022-08-25T16:12:57-07:00
 featured: false
-draft: false
 weight: 1
+intro_image: "images/private-security-building-hero.jpg"
+intro_image_absolute: true
+intro_image_hide_on_mobile: false
 ---
 
 As a leading provider of multi-faceted  security guarding solutions, Freedom uses a managed service model approach. This allows us to ensure that our service is top-notch as we can best match a security vendor with your unique needs in mind. Our vendor network staffs well-trained, reliable security officers and ensures a well-managed, well-organized security program.
