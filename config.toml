@@ -42,8 +42,8 @@ title = "Freedom Security Solutions"
     weight = 3
 
   [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
+    name = "Contact Us"
+    url = "/contact-us/"
     weight = 4
 
   # Footer Menu
@@ -53,6 +53,6 @@ title = "Freedom Security Solutions"
     weight = 1
 
   [[menu.footer]]
-    name = "Contact"
-    url = "/contact/"
+    name = "Contact Us"
+    url = "/contact-us/"
     weight = 2
