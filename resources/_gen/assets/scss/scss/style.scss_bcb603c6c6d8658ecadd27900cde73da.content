@@ -195,7 +195,7 @@ ul {
   padding: 1em 1.85em 1em;
   cursor: pointer;
   color: var(--clr-white-base);
-  background-color: var(--clr, var(--clr-red-base));
+  background-color: var(--clr, var(--clr-black-base));
   border-radius: 0;
   box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
   transform: scale(1);

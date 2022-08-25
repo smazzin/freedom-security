@@ -9,6 +9,10 @@
         {{ if .Site.Params.homepage.show_contact_box }}
           {{ partial "call.html" (dict "site" .Site "context" . "show_button" "true") }}
         {{ end }}
+        <div class="buttons d-flex">
+          <a class="btn btn-dark" href="{{ "contact-us" }}">Get Started</a>
+          <a class="btn btn-dark" href="{{ "services" }}">Learn More</a>
+        </div>
       </div>
       {{ if .Params.intro_image }}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
