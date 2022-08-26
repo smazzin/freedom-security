@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Private Security",
+		"description": "",
+		"image": "images/private-security-sm.jpg"
+	},
+	{
+		"title": "Security Guarding",
+		"description": "",
+		"image": "images/security-guarding-sm.jpg"
+	},
+	{
+		"title": "Executive Protection",
+		"description": "",
+		"image": "images/executive-protection-sm.jpg"
+	},
+	{
+		"title": "Off Duty Police Services",
+		"description": "",
+		"image": "images/off-duty-police-services-sm.jpg"
+	},
+	{
+		"title": "Event Security",
+		"description": "",
+		"image": "images/event-security-sm.jpg"
+	},
+	{
+		"title": "Robotics, Technology",
+		"description": "",
+		"image": "images/robotics-technology-sm.jpg"
+	}
+]
