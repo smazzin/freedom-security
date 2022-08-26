@@ -45,6 +45,16 @@
 </div>
 {{end}}
 
+{{ if .Site.Data.about }}
+<div class="container">
+  <div class="about-us">
+    <h2>{{ .Site.Data.about.heading }}</h2>
+    <p>{{ .Site.Data.about.content }}</p>
+    <img alt="{{ .Site.Data.about.heading }}" src="{{ .Site.Data.about.image | relURL }}" alt="">
+  </div>
+</div>
+{{ end }}
+
 {{if .Site.Data.features}}
 <div class="strip strip-grey">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
