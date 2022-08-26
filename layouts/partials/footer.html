@@ -1,9 +1,12 @@
 <div class="footer">
   <div class="container">
+    <div class="logo-mobile">
+      <a href="{{ .Site.BaseURL }}"><img height={{ .Site.Params.logo.mobile_height }} alt="{{ .Site.Params.logo.alt }}"
+          src="{{ .Site.Params.logo.mobile | relURL }}" /></a>
+    </div>
     <div class="row">
       <div class="col-12">
         <div class="footer-inner">
-          <h3 class="footer-title">{{.Site.Title}}</h3>
           {{ partial "footer-menu" . }}
           
         </div>

@@ -14,8 +14,6 @@ title = "Freedom Security Solutions"
   [params.logo]
     mobile = "images/logo/freedom-security-solutions.png"
     mobile_height = "96px"
-    desktop = "images/logo/freedom-security-solutions.png"
-    desktop_height = "196px"
     alt = "Freedom Security Solutions"
 
   [params.team]
