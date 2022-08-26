@@ -23,6 +23,8 @@ title = "Freedom Security Solutions"
 
   [params.footer]
     copyright_text = 'Freedom Security Solutions'
+    show_contact_box = true     # show / hide the contaxt box on the footer
+    show_services_button = false # show / hide the "view all services" button
 
 [menu]
   # Main Menu
