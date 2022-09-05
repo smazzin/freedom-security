@@ -1,5 +1,13 @@
 .container {
-	padding: 0 1.5rem;
-	max-width: 99.5rem;
+	// https: //smolcss.dev/#smol-responsive-padding
+	padding: 1.5rem clamp(1rem, 5%, 3rem);
+	max-width: 90rem;
+	margin: 0 auto;
+}
+
+.container-sm {
+	// https: //smolcss.dev/#smol-responsive-padding
+	padding: 1.5rem clamp(1rem, 5%, 3rem);
+	max-width: 80rem;
 	margin: 0 auto;
 }

@@ -2,7 +2,7 @@
 
 .btn {
 	display: inline-block;
-	border: 0;
+	border: 2px solid;
 	--font-weight: 500;
 	font-size: var(--fs-300);
 	text-transform: uppercase;
@@ -10,22 +10,83 @@
 	line-height: 1;
 	padding: 1em 1.85em 1em;
 	cursor: pointer;
-	color: var(--clr-white-base);
-	background-color: var(--clr, var(--clr-black-base));
   border-radius: 0;
-  box-shadow: 0 .125em .5em rgba(black, .15);
   transform: scale(1);
   transition: transform 200ms ease;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.05) translateY(-.125em);
+  
+  &-primary {
+    
     color: var(--clr-white-base);
+    border-color: var(--clr-blue-base);
+    background-color: var(--clr, var(--clr-blue-base));
+    box-shadow: 0 .125em .5em rgba(black, .15);
 
-    &::before {
-      opacity: .3;
+    &:hover,
+    &:focus {
+      transform: scale(1.05) translateY(-.125em);
+      color: var(--clr-white-base);
+  
+      &::before {
+        opacity: .3;
+      }
     }
   }
+
+  &-dark {
+    
+    color: var(--clr-white-base);
+    border-color: var(--clr-black-base);
+    background-color: var(--clr, var(--clr-black-base));
+    box-shadow: 0 .125em .5em rgba(black, .15);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05) translateY(-.125em);
+      color: var(--clr-white-base);
+  
+      &::before {
+        opacity: .3;
+      }
+    }
+  }
+
+  &-white {
+    
+    color: var(--clr-black-base);
+    border-color: var(--clr-white-base);
+    background-color: var(--clr, var(--clr-white-base));
+    // box-shadow: 0 .125em .5em rgba(black, .15);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05) translateY(-.125em);
+      color: var(--clr-black-base);
+  
+      &::before {
+        opacity: .3;
+      }
+    }
+  }
+
+  &-white-outline {
+    
+    color: var(--clr-black-base);
+    border-color: var(--clr-black-base);
+    background-color: var(--clr, var(--clr-white-base));
+    // box-shadow: 0 .125em .5em rgba(black, .15);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05) translateY(-.125em);
+      color: var(--clr-black-base);
+  
+      &::before {
+        opacity: .3;
+      }
+    }
+  }
+
+
 
 }
 
