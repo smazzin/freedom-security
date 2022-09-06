@@ -9,6 +9,7 @@ title = "Freedom Security Solutions"
 
   [params.homepage]
     show_contact_box = false     # show / hide the contaxt box on the homepage
+    show_contact_form = true     # show / hide the contact form on the homepage
     show_services_button = false # show / hide the "view all services" button
 
   [params.logo]

@@ -91,6 +91,11 @@
 </div>
 {{end}}
 
+{{ if .Site.Params.homepage.show_contact_form }}
+  {{ partial "contact-form.html" (dict "site" .Site "context" .) }}
+{{ end }}
+
+
 {{ end }}
 
 {{ define "footer_js" }}
