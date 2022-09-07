@@ -5,9 +5,9 @@
 		"image": "images/private-security-sm.jpg"
 	},
 	{
-		"title": "Security Guarding",
+		"title": "Concierge Security",
 		"description": "",
-		"image": "images/security-guarding-sm.jpg"
+		"image": "images/concierge-security-sm.jpg"
 	},
 	{
 		"title": "Executive Protection",
@@ -23,10 +23,5 @@
 		"title": "Event Security",
 		"description": "",
 		"image": "images/event-security-sm.jpg"
-	},
-	{
-		"title": "Robotics, Technology",
-		"description": "",
-		"image": "images/robotics-technology-sm.jpg"
 	}
 ]

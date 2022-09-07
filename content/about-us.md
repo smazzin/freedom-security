@@ -3,48 +3,12 @@ title: "About Us"
 date: 2022-08-25T16:30:23-07:00
 ---
 
-Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+Freedom Security Solutions is a cloud based security brokerage specializing in first class security solutions for all industries.  After 3 years in the private security sector we saw a void in the security industry and wanted to capitalize with our innovative technology solutions. Our in-house workflow and communication platforms are designed to expedite and seamlessly appoint a qualified vendor to the designated post meanwhile creating an overall satisfying experience for the client. 
 
-## Ne verba patulosque numen vix libet
+Freedom’s success stems from our large network of over 2,500 private security vendors nationwide that are skilled and trained in all industries. This is what makes Freedom your one stop shop.  Our database along with our extensive vendor vetting process allows us to handpick from previously vetted, compliant and licensed vendors anywhere in the United States. 
 
-Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
-Ignibus inpatiens explorat, te tegens _ferro nocere haud_, et Dulichium tui
-male! Quo sed [fuit flexit et](#vexant-achivi) hic die solido, gloria?
+Freedom’s services consist of all tiers of hourly armed and unarmed security officers with many variations of skill sets and certifications.  Executive protection, Fire watch, and emergency coverage are also additional services Freedom provides.  We understand that security for your assets or properties are not cookie cutter which is why all job posts are tailored around the client’s needs and budget.  
+ 
+Freedom’s vision is to change the whole perception of the security industry with our double oversight and management processes.  We want our clients to see that they are not just another number.  We accomplish this by providing one on one customer service before, during and after the job. Providing superior service, building relationships and earning our clients trust is most important.
 
-1. Cum det dixit Parcarum qui spemque est
-2. Exit ex huic
-3. Quod consiste agitataque claustraque vicina videt lacertis
-4. Loquor videt
-5. Ardua non igne caelesti coniugis cognovi diversorum
-6. Per nunc pariterque saeva vindicet
-
-Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco _vati_
-dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa!
-Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus
-esse iam feres mortis Plurima.
-
-## Postquam tamen
-
-Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere
-et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et
-licet! Inserui quamvis Clymeni.
-
-- Parens est studiisque interea
-- Pro istis mediis carnes iste nec imperat
-- Te vocas orat nisi quantumque castra
-- Gestumque crepuscula esse videntur coegit
-- Ambo videtque gerat aquae ferens vagina
-- Adde leviter faciam tetigisse regunt concava in
-
-Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de
-incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas,
-vis, saxo recepta [membra contractosque](#fati) remigis [vulnere vetus
-parte](#dissipat) indignata supera.
-
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
-iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
-et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
-somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per
-tamen lentis spectat, Titania est animo.
+-----
