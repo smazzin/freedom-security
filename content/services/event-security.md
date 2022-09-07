@@ -4,6 +4,7 @@ date: 2022-08-25T16:25:58-07:00
 featured: false
 weight: 100
 intro_image: "images/event-security-hero.jpg"
+intro_image_css_class: "event-security"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---

@@ -4,6 +4,7 @@ date: 2022-08-25T16:25:37-07:00
 featured: false
 weight: 100
 intro_image: "images/off-duty-police-services-hero.jpg"
+intro_image_css_class: "off-duty-police-services"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---

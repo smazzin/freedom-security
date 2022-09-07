@@ -1,16 +1,25 @@
 {{ define "body_classes" }}page-services-single{{ end }}
 
 {{ define "main" }}
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
+{{ if .Params.intro_image }}
+<div class="hero hero-has-background" style="--background: url( {{ .Params.intro_image | relURL }} ); --overlay: rgba(255, 255, 255, 0.667);">
+  <div class="container-sm">
+    <div class="hero-content grid-2">
+      <h1 class="title">{{.Title}}</h1>
+    </div>
+  </div>
+</div>
+{{ end }}
+<div class="container-sm">
+  <div class="grid">
+    <div class="col">
       <div class="service service-single">
-        <h1 class="title">{{.Title}}</h1>
         <div class="content">{{.Content}}</div>
       </div>
     </div>
   </div>
 </div>
+{{ partial "contact-form.html" }}
 {{ end }}
 
 {{ define "footer_js" }}

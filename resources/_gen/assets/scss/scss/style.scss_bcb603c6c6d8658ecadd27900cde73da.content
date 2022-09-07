@@ -983,4 +983,28 @@ input[type=submit] {
     display: block;
     clear: both; } }
 
+.hero {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 16.58%, rgba(255, 255, 255, 0) 72.38%); }
+  .hero.hero-has-background {
+    color: var(--clr-black-base);
+    min-height: 25rem;
+    position: relative; }
+    .hero.hero-has-background::before {
+      content: '';
+      position: absolute;
+      background: var(--background) center/cover;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      pointer-events: none; }
+  .hero.row {
+    flex-direction: row; }
+  .hero-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateY(50%); }
+
 /*# sourceMappingURL=style.css.map */

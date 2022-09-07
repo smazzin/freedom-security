@@ -3,7 +3,8 @@ title: "Robotics Technology"
 date: 2022-08-25T16:26:10-07:00
 featured: false
 weight: 100
-intro_image: "images/robotics-technology.jpg"
+intro_image: "images/robotics-technology-hero.jpg"
+intro_image_css_class: "robotics-tecnology"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
