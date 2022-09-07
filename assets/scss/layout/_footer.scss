@@ -14,8 +14,14 @@
 		}
 }
 
+.sub-footer {
+	background-color: var(--clr-blue-base);
+}
+
 .copyright {
-	padding: 2em 0
+	color: var(--clr-white-base);
+	padding: 2em 0;
+	text-align: center;
 }
 
 .footer-phone-number {

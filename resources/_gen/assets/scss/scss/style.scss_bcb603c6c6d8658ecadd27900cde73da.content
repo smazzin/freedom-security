@@ -450,6 +450,12 @@ ul {
 .justify-content-end {
   justify-content: end; }
 
+.justify-content-center {
+  justify-content: center; }
+
+.justify-content-evenly {
+  justify-content: space-evenly; }
+
 .text-center {
   text-align: center; }
 
@@ -532,8 +538,13 @@ ul {
   @media only screen and (min-width: 62rem) {
     .footer {
       justify-items: center; } }
+.sub-footer {
+  background-color: var(--clr-blue-base); }
+
 .copyright {
-  padding: 2em 0; }
+  color: var(--clr-white-base);
+  padding: 2em 0;
+  text-align: center; }
 
 .footer-phone-number {
   text-decoration: none;
@@ -574,8 +585,7 @@ ul {
   column-gap: 1.25rem; }
   @media only screen and (min-width: 62rem) {
     .grid-2 {
-      grid-template-columns: 1fr 1fr;
-      justify-content: space-between; } }
+      grid-template-columns: 1fr 1fr; } }
 .highlight {
   display: grid;
   grid-template-columns: 1fr; }
