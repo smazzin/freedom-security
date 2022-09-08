@@ -42,25 +42,17 @@
 {{if gt (len $services) 0}}
 <div class="services">
   <div class="container">
-    <div class="grid">
-      <div class="col">
-        <h2 class="title text-center">Services</h2>
+      <h2 class="title text-center">Services</h2>
+      <div class="grid-auto">
+        {{ range first 6 (sort $services ".Params.weight") }}
+          {{ .Render "summary" }}
+        {{ end }}
       </div>
-      <div class="col">
-        <div class="grid-auto">
-          {{ range first 6 (sort $services ".Params.weight") }}
-            {{ .Render "summary" }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
-    {{ if not .Site.Params.homepage.show_services_button }}
-    <div class="grid">
-      <div class="col text-center">
+    {{/*  {{ if not .Site.Params.homepage.show_services_button }}
+      <div class="text-center">
         <a class="btn btn-primary" href="{{ "services/" | relURL }}">View All Services</a>
       </div>
-    </div>
-    {{ end }}
+    {{ end }}  */}}
   </div>
 </div>
 {{end}}
@@ -68,30 +60,24 @@
 {{/*  {{if .Site.Data.services}}
 <div class="services">
   <div class="container">
-    <div class="grid">
-      <div class="col">
-        <h2 class="title text-center">Services</h2>
-      </div>
-      <div class="col">
-        <div class="grid-auto">
-          {{ range .Site.Data.services }}
-            <div class="feature">
-              {{ if .image }}
-                <div class="feature-image"><img width="271" height="181" alt="{{ .title }}" src="{{ .image | relURL }}" /></div>
-              {{ end }}
-              <div class="feature-overlay">
-                <div class="feature-body text-center">
-                  <p class="feature-title">{{ .title }}</p>
-                  <div class="feature-content">
-                    <p>{{ .description }}</p>
-                  </div>
+      <h2 class="title text-center">Services</h2>
+      <div class="grid-auto">
+        {{ range .Site.Data.services }}
+          <div class="feature">
+            {{ if .image }}
+              <div class="feature-image"><img width="271" height="181" alt="{{ .title }}" src="{{ .image | relURL }}" /></div>
+            {{ end }}
+            <div class="feature-overlay">
+              <div class="feature-body text-center">
+                <p class="feature-title">{{ .title }}</p>
+                <div class="feature-content">
+                  <p>{{ .description }}</p>
                 </div>
               </div>
             </div>
-            {{end}}
-        </div>
+          </div>
+          {{end}}
       </div>
-    </div>
   </div>
 </div>
 {{end}}  */}}
