@@ -1,9 +1,10 @@
 ---
 title: "Private Security"
 date: 2022-08-25T16:12:57-07:00
-featured: false
+featured: true
 weight: 1
-intro_image: "images/private-security-building-hero.jpg"
+hero_image: "images/private-security-building-hero.jpg"
+intro_image: "images/private-security-sm.jpg"
 intro_image_css_class: "private-security"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false

@@ -23,28 +23,6 @@
   </div>
 </div>
 
-{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
-{{if gt (len $services) 0}}
-<div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
-      {{ range first 6 (sort $services ".Params.weight") }}
-      <div class="col-12 col-md-4 mb-1">
-        {{ .Render "summary" }}
-      </div>
-      {{ end }}
-    </div>
-    {{ if not .Site.Params.homepage.show_services_button }}
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services/" | relURL }}">View All Services</a>
-      </div>
-    </div>
-    {{ end }}
-  </div>
-</div>
-{{end}}
-
 {{ if .Site.Data.about }}
 <div class="about-us">
   <div class="container">
@@ -60,15 +38,42 @@
 </div>
 {{ end }}
 
-{{if .Site.Data.services}}
+{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
+{{if gt (len $services) 0}}
 <div class="services">
-  <div class="container-sm">
+  <div class="container">
     <div class="grid">
       <div class="col">
         <h2 class="title text-center">Services</h2>
       </div>
       <div class="col">
-        <div class="grid-3">
+        <div class="grid-auto">
+          {{ range first 6 (sort $services ".Params.weight") }}
+            {{ .Render "summary" }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ if not .Site.Params.homepage.show_services_button }}
+    <div class="grid">
+      <div class="col text-center">
+        <a class="btn btn-primary" href="{{ "services/" | relURL }}">View All Services</a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{end}}
+
+{{/*  {{if .Site.Data.services}}
+<div class="services">
+  <div class="container">
+    <div class="grid">
+      <div class="col">
+        <h2 class="title text-center">Services</h2>
+      </div>
+      <div class="col">
+        <div class="grid-auto">
           {{ range .Site.Data.services }}
             <div class="feature">
               {{ if .image }}
@@ -89,7 +94,7 @@
     </div>
   </div>
 </div>
-{{end}}
+{{end}}  */}}
 
 {{ if .Site.Params.homepage.show_contact_form }}
   {{ partial "contact-form.html" (dict "site" .Site "context" .) }}

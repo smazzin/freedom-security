@@ -4,7 +4,7 @@
 .grid-3 {
   display: grid;
   grid-template-columns: 1fr;
-  column-gap: 1.25rem;
+  gap: 1.25rem;
   
   @include mq(medium) {
       grid-template-columns: 1fr 1fr 1fr;
@@ -14,7 +14,7 @@
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr;
-  column-gap: 1.25rem;
+  gap: 1.25rem;
   
   @include mq(medium) {
     grid-template-columns: 1fr 1fr;
@@ -28,7 +28,17 @@
   
   @include mq(medium) {
     grid-template-columns: 1fr 1fr;
-    column-gap: 1.25rem;
+    gap: 1.25rem;
+  }
+}
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.25rem;
+  
+  @include mq(medium) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
 
@@ -36,7 +46,7 @@
 .grid-overlap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 1.25rem;
+  gap: 1.25rem;
 
   width: 100%;
   margin: 0 auto;

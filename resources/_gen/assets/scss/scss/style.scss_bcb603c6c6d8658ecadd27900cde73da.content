@@ -456,8 +456,20 @@ ul {
 .justify-content-evenly {
   justify-content: space-evenly; }
 
+.position-relative {
+  position: relative; }
+
 .text-center {
   text-align: center; }
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: ""; }
 
 .stack > * + * {
   margin-block-start: 1.5rem; }
@@ -575,14 +587,14 @@ ul {
 .grid-3 {
   display: grid;
   grid-template-columns: 1fr;
-  column-gap: 1.25rem; }
+  gap: 1.25rem; }
   @media only screen and (min-width: 62rem) {
     .grid-3 {
       grid-template-columns: 1fr 1fr 1fr; } }
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr;
-  column-gap: 1.25rem; }
+  gap: 1.25rem; }
   @media only screen and (min-width: 62rem) {
     .grid-2 {
       grid-template-columns: 1fr 1fr; } }
@@ -592,11 +604,18 @@ ul {
   @media only screen and (min-width: 62rem) {
     .highlight {
       grid-template-columns: 1fr 1fr;
-      column-gap: 1.25rem; } }
+      gap: 1.25rem; } }
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.25rem; }
+  @media only screen and (min-width: 62rem) {
+    .grid-auto {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); } }
 .grid-overlap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 1.25rem;
+  gap: 1.25rem;
   width: 100%;
   margin: 0 auto; }
 
@@ -616,30 +635,34 @@ ul {
 
 @use '../abstracts/' as *;
 .feature {
-  position: relative;
-  overflow: hidden;
-  margin: 1.25rem 0; }
-  .feature-overlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 122, 179, 0.55);
-    overflow: hidden;
+  display: grid;
+  place-items: center;
+  isolation: auto;
+  background: rgba(0, 122, 179, 0.55);
+  overflow: hidden; }
+  .feature > * {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1; }
+  .feature p {
+    color: var(--clr-white-base); }
+  .feature a {
+    text-decoration: none; }
+  .feature img {
+    mix-blend-mode: multiply;
+    filter: brightness(110%);
     width: 100%;
-    height: 100%; }
-  .feature-image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .feature-body {
-    color: var(--clr-white-base);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
+  .feature:hover {
+    background: rgba(0, 122, 179, 0.75); }
+  .feature:hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
 
 @use '../abstracts' as *;
 .header {

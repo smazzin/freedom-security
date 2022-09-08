@@ -2,7 +2,7 @@
 
 {{ define "main" }}
 {{ if .Params.intro_image }}
-<div class="hero hero-has-background" style="--background: url( {{ .Params.intro_image | relURL }} ); --overlay: rgba(255, 255, 255, 0.667);">
+<div class="hero hero-has-background" style="--background: url( {{ .Params.hero_image | relURL }} ); --overlay: rgba(255, 255, 255, 0.667);">
   <div class="container-sm">
     <div class="hero-content grid-2">
       <h1 class="title">{{.Title}}</h1>

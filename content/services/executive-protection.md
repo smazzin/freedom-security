@@ -1,9 +1,10 @@
 ---
 title: "Executive Protection"
 date: 2022-09-07T07:23:53-07:00
-featured: false
+featured: true
 weight: 100
-intro_image: "images/executive-protection-services-hero.jpg"
+hero_image: images/executive-protection-services-hero.jpg
+intro_image: images/executive-protection-services-sm.jpg
 intro_image_css_class: "executive-protection-services"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false

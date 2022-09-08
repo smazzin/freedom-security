@@ -1,9 +1,10 @@
 ---
 title: "Concierge Security"
 date: 2022-09-07T07:22:58-07:00
-featured: false
+featured: true
 weight: 100
-intro_image: "images/concierge-security-services-hero.jpg"
+hero_image: images/concierge-security-services-hero.jpg
+intro_image: images/concierge-security-services-sm.jpg
 intro_image_css_class: "concierge-security-services"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false

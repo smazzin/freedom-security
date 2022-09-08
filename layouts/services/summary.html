@@ -1,8 +1,6 @@
-<div class="service service-summary">
-  <div class="service-content">
-    <h2 class="service-title">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </h2>
-    <p>{{ .Content | plainify | htmlUnescape | truncate 120 "…" }}</p>
-  </div>
+<div class="feature position-relative">
+  <p>
+    <a class="stretched-link" href="{{ .Permalink }}">{{ .Title }}</a>
+  </p>
+  <img alt="{{ .Title }}" src="{{ .Params.intro_image | relURL }}">
 </div>
