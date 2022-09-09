@@ -140,12 +140,8 @@ a {
     color: var(--clr-green-base);
     text-decoration: none; }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  ul li {
-    padding: .15em 0; }
+ul li {
+  padding: .15em 0; }
 
 @use "../abstracts" as *;
 .text-blue-base {
