@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+  command = "hugo --gc --minify --disableKinds=taxonomy,taxonomyTerm"
+
+[build.environment]
+  HUGO_VERSION = "0.80.0"
+  HUGO_ENV = "production"
+  HUGO_BASEURL = "/"
