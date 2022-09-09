@@ -834,7 +834,8 @@ ul li {
       .dropdown-menu .menu-item a:hover {
         text-decoration: underline; }
   .dropdown:hover .dropdown-menu {
-    display: block; } }
+    display: block;
+    z-index: 1; } }
 
 label {
   display: block;
