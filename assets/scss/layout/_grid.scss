@@ -54,8 +54,10 @@
 
 .image,
 .body {
-  grid-row: 1 / 2;
-  align-self: center;
+  @include mq(medium) {
+    grid-row: 1 / 2;
+    align-self: center;
+  }
 }
 
 .image {
@@ -63,8 +65,12 @@
 }
 
 .body {
-  grid-column: 2 / -1;
+  grid-column: 1 / -1;
   background: var(--clr-black-base);
   color: var(--clr-white-base);
-  padding: 4.45em;
+  padding: 1.45em;
+
+  @include mq(medium) {
+    grid-column: 2 / -1;
+  }
 }
