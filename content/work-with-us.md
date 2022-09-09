@@ -1,5 +1,6 @@
 ---
 title: "Work With Us"
+description: 'If you own or manage a security company, and looking to partner with a trusting security brokerage, contact us to learn more about how to get approved in the Freedom Security vendor portal.'
 date: 2022-08-25T16:37:57-07:00
 ---
 
