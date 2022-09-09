@@ -2,14 +2,31 @@
   <ul>
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-    {{ $active = or $active (eq .Name $currentPage.Title) }}
-    <li class="menu-item-{{ .Name | lower }} {{ if $active }}active{{ end }}">
+    {{ if .HasChildren }}
+    <li class="menu-item dropdown {{ if or (eq .Pre .URL) (eq .URL $currentPage.RelPermalink) }}active{{ end }}">
+        <a href="{{.URL | relURL }}">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+        </a>
+        <ul class="dropdown-menu">
+          {{ range .Children }}
+          <li class="menu-item {{ if or (eq .Pre .URL) (eq .URL $currentPage.RelPermalink) }}active{{ end }}">
+            <a href="{{.URL | relURL }}">
+              {{ .Pre }}
+              <span>{{ .Name }}</span>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </li> 
+    {{ else }}
+    <li class="menu-item {{ if or (eq .Pre .URL) (eq .URL $currentPage.RelPermalink) }}active{{ end }}">
       <a href="{{.URL}}">
         {{ .Pre }}
         <span>{{ .Name }}</span>
       </a>
     </li>
     {{end}}
-  </ul>
-</div>
+    {{end}}
+    </ul>
+  </div>

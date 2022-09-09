@@ -39,8 +39,32 @@ title = "Freedom Security Solutions"
 
   [[menu.main]]
     name = "Services"
-    url = "#"
+    url = "/services/"
     weight = 3
+
+  [[menu.main]]
+    name = "Private Security"
+    url = "/services/private-security/"
+    weight = 4
+    parent = "Services"
+
+  [[menu.main]]
+    name = "Executive Protection"
+    url = "/services/executive-protection/"
+    weight = 5
+    parent = "Services"
+
+  [[menu.main]]
+    name = "Event Security"
+    url = "/services/event-security/"
+    weight = 6
+    parent = "Services"
+
+  [[menu.main]]
+    name = "Concierge Security"
+    url = "/services/concierge-security/"
+    weight = 7
+    parent = "Services"
 
   [[menu.main]]
     name = "Contact Us"
