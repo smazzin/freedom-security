@@ -814,21 +814,21 @@ ul li {
           text-decoration: none;
           transition: all 225ms ease-in 0s; }
 
-.dropdown-menu {
-  color: var(--clr-white-base);
-  display: none;
-  position: absolute;
-  list-style: none;
-  width: auto;
-  padding: 10px 12px 10px 12px;
-  background-color: var(--clr-gray-base); }
-  .dropdown-menu .menu-item a {
-    text-decoration: none; }
-    .dropdown-menu .menu-item a:hover {
-      text-decoration: underline; }
-
-.dropdown:hover .dropdown-menu {
-  display: block; }
+@media only screen and (min-width: 62rem) {
+  .dropdown-menu {
+    color: var(--clr-white-base);
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: auto;
+    padding: 10px 12px 10px 12px;
+    background-color: var(--clr-gray-base); }
+    .dropdown-menu .menu-item a {
+      text-decoration: none; }
+      .dropdown-menu .menu-item a:hover {
+        text-decoration: underline; }
+  .dropdown:hover .dropdown-menu {
+    display: block; } }
 
 label {
   display: block;
