@@ -43,8 +43,11 @@
     &::before {
       content: '';
       position: absolute;
-      background: var(--background) center/cover;
-      top: 0; bottom: 0; left: 0; right: 0;
+      background: var(--background) center / cover;
+      top: 0; 
+      bottom: 0; 
+      left: 0; 
+      right: 0;
       z-index: -1;
       pointer-events: none;
     }
