@@ -1,8 +1,11 @@
 ---
 title: "Work With Us"
-description: 'If you own or manage a security company, and looking to partner with a trusting security brokerage, contact us to learn more about how to get approved in the Freedom Security vendor portal.'
+description: 'We currently have partnerships with over 2500 vendors in our vendor network across the United States, contact us to learn more about how to get approved in the Freedom Security vendor portal.'
 date: 2022-08-25T16:37:57-07:00
+layout: work-with-us
 ---
+
+# Work With Us
 
 We currently have partnerships with over 2500 vendors in our vendor network across the United States. If you own or manage a security company, and looking to partner with a trusting security brokerage that is hungry to bring you more long term jobs see below to learn more about how to get approved in the Freedom Security vendor portal.
 
