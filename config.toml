@@ -55,14 +55,20 @@ title = "Freedom Security Solutions"
     parent = "Services"
 
   [[menu.main]]
-    name = "Event Security"
-    url = "/services/event-security/"
+    name = "Concierge Security"
+    url = "/services/concierge-security/"
     weight = 6
     parent = "Services"
 
   [[menu.main]]
-    name = "Concierge Security"
-    url = "/services/concierge-security/"
+    name = "Event Security"
+    url = "/services/event-security/"
+    weight = 7
+    parent = "Services"
+
+  [[menu.main]]
+    name = "Off Duty Police Police Services"
+    url = "/services/off-duty-police-services/"
     weight = 7
     parent = "Services"
 
