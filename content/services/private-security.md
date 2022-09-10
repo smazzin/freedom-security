@@ -11,3 +11,5 @@ intro_image_hide_on_mobile: false
 ---
 
 Partnered with highly qualified vendors we can handle all your private security needs.  We cover all services such as fire watch, static guard, and emergency coverage.   Contact  us to discuss more!
+
+## Contact Us About Private Security

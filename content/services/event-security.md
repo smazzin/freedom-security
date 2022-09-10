@@ -11,3 +11,5 @@ intro_image_hide_on_mobile: false
 ---
 
 With Extensive Event experience, Freedom can streamline all of your event staff needs.  Lets us take the stress off you by providing you all your event security solutions. We work hand in hand with each vendor to make sure all aspects of your event has the proper personnel. 
+
+## Contact Us About Event Security

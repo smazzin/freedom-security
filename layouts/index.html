@@ -83,7 +83,10 @@
 {{end}}  */}}
 
 {{ if .Site.Params.homepage.show_contact_form }}
+<div class="container-sm">
+  <h4 class="title">Contact Us</h4>
   {{ partial "contact-form.html" (dict "site" .Site "context" .) }}
+</div>
 {{ end }}
 
 

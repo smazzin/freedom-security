@@ -1,31 +1,36 @@
-<div class="container-sm">
-	<h4 class="title">Work with Us</h4>
-	<p>If you own or manage a security company, you can learn more about how the Freedom security vendor network works.</p>
-	<form name="contact" data-netlify="true" netlify-honeypot="bot-field" method="POST">
-		<div class="grid-2">
-			<div class="column">
-				<label for="the-name">Your Name</label>
-				<input type="text" name="name" id="the-name">
-		
-				<label for="the-email">Email Address</label>
-				<input type="email" name="email" id="the-email">
-		
-				<label for="the-phone">Phone Number</label>
-				<input type="tel" name="phone" id="the-phone">
-		
-				<label for="the-reason">How can we help you?</label>
-				<select name="reason" id="the-reason">
-					<option value="">Choose one</option>
-					<option value="web">I need web design services</option>
-					<option value="video">I need you to produce a video</option>
-					<option value="3d">I need 3D polygon things</option>
-			</select>
-			</div>
-			<div class="column">
-				<label for="the-message">Message</label>
-				<textarea name="message" id="the-message"></textarea>
-				<input class="btn btn-primary" type="submit" value="Send Message">
-			</div>
+<p>
+	{{ .Scratch.Set "title" .Site.Params.Title }}
+	{{ .Scratch.Get "title" }}
+
+	{{ .Site.Params.Title }}
+</p>
+<p>If you own or manage a security company, you can learn more about how the Freedom security vendor network works.</p>
+<form name="contact" data-netlify="true" netlify-honeypot="bot-field" method="POST">
+	<div class="grid-2">
+		<div class="column">
+			<label for="the-name">Your Name</label>
+			<input type="text" name="name" id="the-name">
+	
+			<label for="the-email">Email Address</label>
+			<input type="email" name="email" id="the-email">
+	
+			<label for="the-phone">Phone Number</label>
+			<input type="tel" name="phone" id="the-phone">
+	
+			<label for="the-reason">How can we help you?</label>
+			<select name="reason" id="the-reason">
+				<option value="">Choose one</option>
+				<option value="private-security">Private Security</option>
+				<option value="executive-protection">Executive Protection</option>
+				<option value="concierge-security">Concierge Security</option>
+				<option value="event-security">Event Security</option>
+				<option value="off-duty-police-services">Off Duty Police Services</option>
+		</select>
 		</div>
-	</form>
-</div>
+		<div class="column">
+			<label for="the-message">Message</label>
+			<textarea name="message" id="the-message"></textarea>
+			<input class="btn btn-primary" type="submit" value="Send Message">
+		</div>
+	</div>
+</form>

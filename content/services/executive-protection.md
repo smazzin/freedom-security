@@ -11,3 +11,5 @@ intro_image_hide_on_mobile: false
 ---
 
 There’s nothing more important than the safety of your family and friends.  Freedom’s highly trained Executive Protective Agents are top of the line and hand-picked to fit in accordingly.  Call us to discuss more. 
+
+## Contact Us About Executive Protection

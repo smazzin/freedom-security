@@ -10,4 +10,6 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-If you’re looking for the perfect security concierge for your commercial or office building you’ve come to the right place.  We understand there Is a certain level of customer service skills that is required for this specific position.  
+If you’re looking for the perfect security concierge for your commercial or office building you’ve come to the right place.  We understand there Is a certain level of customer service skills that is required for this specific position.
+
+## Contact Us About Concierge Security

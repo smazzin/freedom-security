@@ -11,3 +11,5 @@ intro_image_hide_on_mobile: false
 ---
 
 Our officers can handle/enforce any situation. We exclusively contract with commissioned active duty police officers to serve and protect your life, property and business.
+
+## Contact Us About Off Duty Police Services

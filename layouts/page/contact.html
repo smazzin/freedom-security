@@ -6,7 +6,7 @@
       <div class="content">{{.Content}}</div>
       {{ partial "call.html" (dict "site" .Site "context" . "show_button" "false") }}
     </div>
+    {{ partial "contact-form.html" }}
   </div>
-  {{ partial "contact-form.html" }}
 
 {{ end }}
