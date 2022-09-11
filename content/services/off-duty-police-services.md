@@ -1,5 +1,6 @@
 ---
 title: "Off Duty Police Services"
+description: 'We offer a range of security services to help your business. We exclusively contract with commissioned active duty police officers to serve and protect your life, property and business. Contact us to discuss more.'
 date: 2022-08-25T16:25:37-07:00
 featured: true
 weight: 100

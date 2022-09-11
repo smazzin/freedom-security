@@ -1,5 +1,6 @@
 ---
-title: "Executive Protection"
+title: "Executive Protection - Freedom Security Solutions"
+description: 'We offer a range of security services to help your business. Freedom’s highly trained Executive Protective Agents are top of the line and hand-picked to fit in accordingly. Call us to discuss more.'
 date: 2022-09-07T07:23:53-07:00
 featured: true
 weight: 100
@@ -10,6 +11,6 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-There’s nothing more important than the safety of your family and friends.  Freedom’s highly trained Executive Protective Agents are top of the line and hand-picked to fit in accordingly.  Call us to discuss more. 
+There’s nothing more important than the safety of your family and friends. Freedom’s highly trained Executive Protective Agents are top of the line and hand-picked to fit in accordingly. Call us to discuss more. 
 
 ## Contact Us About Executive Protection
