@@ -1,5 +1,6 @@
 ---
-title: "Event Security - Freedom Security Solutions"
+title: "Event Security"
+meta_title: "Event Security - Freedom Security Solutions"
 description: 'We offer a range of security services to help your business. We work hand in hand with each vendor to make sure all aspects of your event has the proper personnel. Contact us to discuss more.'
 date: 2022-08-25T16:25:58-07:00
 featured: true

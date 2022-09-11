@@ -1,5 +1,6 @@
 ---
-title: "Private Security - Freedom Security Solutions"
+title: "Private Security"
+meta_title: "Private Security - Freedom Security Solutions"
 description: 'We offer a range of security services to help your business. We cover all services such as fire watch, static guard, and emergency coverage. Contact us to discuss more'
 date: 2022-08-25T16:12:57-07:00
 featured: true

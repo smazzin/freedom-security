@@ -1,5 +1,6 @@
 ---
 title: "Work With Us"
+meta_title: "Work With Us - Freedom Security Solutions"
 description: 'We currently have partnerships with over 2500 vendors in our vendor network across the United States, contact us to learn more about how to get approved in the Freedom Security vendor portal.'
 date: 2022-08-25T16:37:57-07:00
 layout: work-with-us

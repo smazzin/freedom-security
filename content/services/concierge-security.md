@@ -1,5 +1,6 @@
 ---
-title: "Concierge Security - Freedom Security Solutions"
+title: "Concierge Security"
+meta_title: "Concierge Security - Freedom Security Solutions"
 description: 'We offer a range of security services to help your business. If you’re looking for the perfect security concierge for your commercial or office building you’ve come to the right place. Contact us to discuss more.'
 date: 2022-09-07T07:22:58-07:00
 featured: true

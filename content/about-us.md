@@ -1,5 +1,6 @@
 ---
 title: "About Us"
+meta_title: "About Us - Freedom Security Solutions"
 description: 'Freedom Security Solutions is a cloud based security brokerage specializing in first class security solutions for all industries. From Private security, executive protection, concierege, events, and off duty police services.'
 date: 2022-08-25T16:30:23-07:00
 ---
