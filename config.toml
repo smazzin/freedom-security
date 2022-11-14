@@ -33,8 +33,8 @@ title = "Freedom Security Solutions"
     weight = 1
 
   [[menu.main]]
-    name = "Work With Us"
-    url = "/work-with-us/"
+    name = "Become A Vendor"
+    url = "/become-a-vendor/"
     weight = 2
 
   [[menu.main]]
