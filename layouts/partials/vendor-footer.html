@@ -1,0 +1,23 @@
+<div class="footer">
+  <div class="container-sm">
+    <div class="grid-2 align-items-center justify-content-evenly">
+      <div class="logo-mobile">
+        <a href="{{ .Site.BaseURL }}"><img height={{ .Site.Params.logo.mobile_height }} alt="{{ .Site.Params.logo.alt }}"
+            src="{{ .Site.Params.logo.mobile | relURL }}" /></a>
+      </div>
+  
+      {{/*  <div class="row">
+        <div class="col-12">
+          <div class="footer-inner">
+            {{ partial "footer-menu" . }}
+            
+          </div>
+        </div>
+      </div>  */}}
+  
+      {{ if .Site.Params.footer.show_contact_box }}
+      {{ partial "vendor-call.html" (dict "site" .Site "context" . "show_button" "false") }}
+      {{ end }}
+    </div>
+  </div>
+</div>
