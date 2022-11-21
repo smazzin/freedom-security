@@ -67,6 +67,7 @@ select {
 :root {
   --section-spacing: 3.5rem;
   --clr-blue-base: #0079B3;
+  --clr-green-base: #00B374;
   --clr-black-base: #000514;
   --clr-gray-base: #434752;
   --clr-white-base: #ffffff;
@@ -149,6 +150,12 @@ ul li {
 
 .bg-blue-base {
   background-color: var(--clr-blue-base) !important; }
+
+.text-green-base {
+  color: var(--clr-green-base) !important; }
+
+.bg-green-base {
+  background-color: var(--clr-green-base) !important; }
 
 .text-black-base {
   color: var(--clr-black-base) !important; }
@@ -499,6 +506,25 @@ ul li {
       color: var(--clr-white-base); }
       .btn-primary:hover::before, .btn-primary:focus::before {
         opacity: .3; }
+  .btn-green {
+    color: var(--clr-white-base);
+    border-color: var(--clr-green-base);
+    background-color: var(--clr, var(--clr-green-base));
+    box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.15); }
+    .btn-green:hover, .btn-green:focus {
+      transform: scale(1.05) translateY(-0.125em);
+      color: var(--clr-white-base); }
+      .btn-green:hover::before, .btn-green:focus::before {
+        opacity: .3; }
+  .btn-green-outline {
+    color: var(--clr-green-base);
+    border-color: var(--clr-green-base);
+    background-color: var(--clr, var(--clr-white-base)); }
+    .btn-green-outline:hover, .btn-green-outline:focus {
+      transform: scale(1.05) translateY(-0.125em);
+      color: var(--clr-green-base); }
+      .btn-green-outline:hover::before, .btn-green-outline:focus::before {
+        opacity: .3; }
   .btn-dark {
     color: var(--clr-white-base);
     border-color: var(--clr-black-base);
@@ -631,7 +657,7 @@ ul li {
 
 .body {
   grid-column: 1 / -1;
-  background: var(--clr-black-base);
+  background: var(--clr-blue-base);
   color: var(--clr-white-base);
   padding: 1.45em; }
   @media only screen and (min-width: 62rem) {
@@ -650,6 +676,7 @@ ul li {
   .feature p {
     color: var(--clr-white-base); }
   .feature a {
+    color: var(--clr-white-base);
     text-decoration: none; }
   .feature img {
     mix-blend-mode: multiply;
@@ -830,6 +857,7 @@ ul li {
     padding: 10px 12px 10px 12px;
     background-color: var(--clr-gray-base); }
     .dropdown-menu .menu-item a {
+      color: var(--clr-white-base);
       text-decoration: none; }
       .dropdown-menu .menu-item a:hover {
         text-decoration: underline; }

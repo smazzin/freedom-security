@@ -46,6 +46,7 @@
     background-color: var(--clr-gray-base);
   
     .menu-item a {
+      color: var(--clr-white-base);
       text-decoration: none;
       &:hover {
         text-decoration: underline;

@@ -3,6 +3,9 @@
 // blues
 $blue: 									#0079B3;
 
+// greens									
+$green:									#00B374;
+
 // blacks
 $black:									#000514;
 
@@ -16,6 +19,9 @@ $white-offset:					#B9BABF;
 $colors: (
 	"blue": (
 		"base": $blue,
+	),
+	"green": (
+		"base": $green,
 	),
 	"black": (
 		"base": $black
