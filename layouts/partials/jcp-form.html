@@ -3,58 +3,55 @@
 		<div class="grid">
 			<div class="column">
 				<label for="client-company-name">Client Company Name *</label>
-				<input type="text" id="client-company-name" required/>
+				<input type="text" id="client-company-name" name="client-company-name" required/>
 				
 				<label for="requestor-full-name">Requestor's Full Name *</label>
-				<input type="text" id="requestor-full-name" required/>
+				<input type="text" id="requestor-full-name" name="requestor-full-name" required/>
 				
 				<label for="requestor-phone-number">Requestor's Phone Number *</label>
-				<input type="tel" id="requestor-phone-number" required/>
+				<input type="tel" id="requestor-phone-number" name="requestor-phone-number" required/>
 				
 				<label for="requestor-email-address">Requestor's Email Address *</label>
-				<input type="email" id="requestor-email-address" required/>
+				<input type="email" id="requestor-email-address" name="requestor-email-address" required/>
 				
 				<label for="local-contact-full-name">Local Contact's Full Name *</label>
-				<input type="text" id="local-contact-full-name" required/>
+				<input type="text" id="local-contact-full-name" name="local-contact-full-name" required/>
 				
 				<label for="local-contact-phone-number">Local Contact's Phone Number *</label>
-				<input type="tel" id="local-contact-phone-number" required/>
+				<input type="tel" id="local-contact-phone-number" name="local-contact-phone-number" required/>
 				
 				<label for="local-contact-email">Local Contact's Email *</label>
-				<input type="email" id="local-contact-email" required/>
+				<input type="email" id="local-contact-email" name="local-contact-email" required/>
 				
 				<label for="service-location-phone-number">Service Location Phone Number (If applicable)</label>
-				<input type="tel" id="service-location-phone-number" />
+				<input type="tel" id="service-location-phone-number" name="service-location-phone-number" />
 				
 				<label for="service-location-name">Service Location Name (If applicable)</label>
-				<input type="text" id="service-location-name" />
+				<input type="text" id="service-location-name" name="service-location-name"/>
 				
 				<label for="store-number">Store # (If applicable)</label>
-				<input type="text" id="store-number" />
+				<input type="text" id="store-number" name="store-number" />
 				
 				<label for="service-location-address">Service Location Address *</label>
-				<input type="text" id="service-location-address" required/>
+				<input type="text" id="service-location-address" name="service-location-address" required/>
 				
 				<label for="service-location-city">Service Location City *</label>
-				<input type="text" id="service-location-city" required/>
+				<input type="text" id="service-location-city" name="service-location-city" required/>
 				
 				<label for="service-location-state">Service Location State or Canadian Province *</label>
-				<input type="text" id="service-location-state" />
+				<input type="text" id="service-location-state" name="service-location-state" required/>
 				
 				<label for="service-location-zip">Service Location Zip / Postal Code *</label>
-				<input type="text" id="service-location-zip" />
+				<input type="text" id="service-location-zip" name="service-location-zip" required/>
 				
 				<label for="service-date">Service Date(s) *</label>
-				<input type="text" id="service-dates" required>
+				<input type="text" id="service-dates" name="service-dates" required>
 				
 				<label for="shift-times">Shift Times *</label>
 				<textarea name="shift-times" id="shift-tiems" cols="30" rows="10" required></textarea>
 				
 				<label for="number-of-officers-required">Number of Officers Per Shift Required *</label>
-				<input type="text" id="number-of-officers-required" required>
-
-				<label for="armed-unarmed">If both Unarmed and Armed Services are being requested, explain:</label>
-				<textarea name="armed-unarmed" id="armed-unarmed" cols="30" rows="10" required></textarea>
+				<input type="text" id="number-of-officers-required" name="number-of-officers-required" required>
 				
 				<label for="guard-duties">What are the guard duties and where do you want the guard located?</label>
 				<textarea name="guard-duties" id="guard-duties" cols="30" rows="10" required></textarea>
@@ -87,12 +84,13 @@
 				<textarea name="reason-for-request-duties" id="reason-for-request-duties" cols="30" rows="10" required></textarea>
 
 				<label for="additional-comments">Additional Comments</label>
-				<textarea name="additional-comments" id="additional-comments" cols="30" rows="10" required></textarea>
+				<textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
 
 				<label for="po-cost-center">PO# / Cost Center *</label>
 				<input type="text" id="po-cost-center">
 
-				
+				<input type="hidden" id="subject" name="subject" value="JCP Security Guard Request Form">
+
 				<input class="btn btn-green" type="submit" value="Submit" />
 
 			</div>
