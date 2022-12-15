@@ -3,10 +3,10 @@
 {{ define "main" }}
 <div class="container-sm">
   <div class="col">
-      <div class="content">{{.Content}}</div>
-      {{ partial "call.html" (dict "site" .Site "context" . "show_button" "false") }}
-    </div>
-    {{ partial "contact-form.html" }}
+    <div class="content">{{.Content}}</div>
+    {{ partial "call.html" (dict "site" .Site "context" . "show_button" "false") }}
   </div>
+    {{ partial "contact-form.html" }}
+</div>
   {{ partial "footer.html" . }}
 {{ end }}

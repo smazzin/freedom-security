@@ -1,5 +1,5 @@
 <div class="container-xs">
-	<form name="work-with-us" data-netlify="true" netlify-honeypot="bot-field" method="POST">
+	<form name="jcp-request-form" data-netlify="true" netlify-honeypot="bot-field" method="POST">
 		<div class="grid">
 			<div class="column">
 				<label for="client-company-name">Client Company Name *</label>
@@ -17,7 +17,7 @@
 				<label for="local-contact-full-name">Local Contact's Full Name *</label>
 				<input type="text" id="local-contact-full-name" required/>
 				
-				<label for="local-contact-phone-number">Local Contact's Phone Number</label>
+				<label for="local-contact-phone-number">Local Contact's Phone Number *</label>
 				<input type="tel" id="local-contact-phone-number" required/>
 				
 				<label for="local-contact-email">Local Contact's Email</label>
@@ -32,26 +32,26 @@
 				<label for="store-number">Store # (If applicable)</label>
 				<input type="text" id="store-number" />
 				
-				<label for="service-location-address">Service Location Address</label>
+				<label for="service-location-address">Service Location Address *</label>
 				<input type="text" id="service-location-address" required/>
 				
-				<label for="service-location-city">Service Location City</label>
+				<label for="service-location-city">Service Location City *</label>
 				<input type="text" id="service-location-city" required/>
 				
-				<label for="service-location-state">Service Location State or Canadian Province</label>
+				<label for="service-location-state">Service Location State or Canadian Province *</label>
 				<input type="text" id="service-location-state" />
 				
-				<label for="service-location-zip">Service Location Zip / Postal Code</label>
+				<label for="service-location-zip">Service Location Zip / Postal Code *</label>
 				<input type="text" id="service-location-zip" />
 				
-				<label for="service-date">Service Date(s)</label>
+				<label for="service-date">Service Date(s) *</label>
 				<input type="text" id="service-dates" required>
 				
-				<label for="shift-times">Shift Times</label>
+				<label for="shift-times">Shift Times *</label>
 				<textarea name="shift-times" id="shift-tiems" cols="30" rows="10" required></textarea>
 				
-				<label for="number-of-officers-required">Number of Officers Per Shift Required</label>
-				<textarea name="number-of-officers-required" id="number-of-officers-required" cols="30" rows="10" required></textarea>
+				<label for="number-of-officers-required">Number of Officers Per Shift Required *</label>
+				<input type="text" id="number-of-officers-required" required>
 
 				<label for="armed-unarmed">If both Unarmed and Armed Services are being requested, explain:</label>
 				<textarea name="armed-unarmed" id="armed-unarmed" cols="30" rows="10" required></textarea>
@@ -59,30 +59,37 @@
 				<label for="guard-duties">What are the guard duties and where do you want the guard located?</label>
 				<textarea name="guard-duties" id="guard-duties" cols="30" rows="10" required></textarea>
 
-				<label for="security-guard-required">Is a Security Vehicle Required?</label>
+				<label for="security-guard-required">Is a Security Vehicle Required? *</label>
 				<select name="security-guard-required" id="security-guard-required" required>
 					<option value="">Choose one</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 				</select>
 
-				<label for="new-exisiting-service">Is This New or Existing Service</label>
+				<label for="new-exisiting-service">Is this new or existing Service *</label>
 				<select name="new-exisiting-service" id="new-exisiting-service" required>
 					<option value="">Choose one</option>
 					<option value="New">New</option>
 					<option value="Existing">Existing</option>
 				</select>
 
+				<label for="extension-of-service">Is This an Extension of Services *</label>
+				<select name="extension-of-service" id="extension-of-service" required>
+					<option value="">Choose one</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>
+
 				<label for="any-security-issues">Are There Service Issues (Please Explain)</label>
 				<textarea name="any-security-issues" id="any-security-issues" cols="10" rows="5"></textarea>
 
-				<label for="reason-for-request-duties">Reason for Request / Duties</label>
+				<label for="reason-for-request-duties">Reason for Request / Duties *</label>
 				<textarea name="reason-for-request-duties" id="reason-for-request-duties" cols="30" rows="10" required></textarea>
 
 				<label for="additional-comments">Additional Comments</label>
 				<textarea name="additional-comments" id="additional-comments" cols="30" rows="10" required></textarea>
 
-				<label for="po-cost-center">PO# / Cost Center</label>
+				<label for="po-cost-center">PO# / Cost Center *</label>
 				<input type="text" id="po-cost-center">
 
 				
