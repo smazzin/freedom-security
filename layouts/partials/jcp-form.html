@@ -80,8 +80,19 @@
 				<label for="any-security-issues">Are There Service Issues (Please Explain)</label>
 				<textarea name="any-security-issues" id="any-security-issues" cols="10" rows="5"></textarea>
 
+				{{/*  <label for="reason-for-request-duties">Reason for Request / Duties *</label>
+				<textarea name="reason-for-request-duties" id="reason-for-request-duties" cols="30" rows="10" required></textarea>  */}}
+
 				<label for="reason-for-request-duties">Reason for Request / Duties *</label>
-				<textarea name="reason-for-request-duties" id="reason-for-request-duties" cols="30" rows="10" required></textarea>
+				<select id="reason-for-request-duties" name="reason-for-request-duties">
+						<option value="">--Please choose an option--</option>
+						<option value="option1">Option 1</option>
+						<option value="option2">Option 2</option>
+				</select>
+		
+				<div id="dynamic-fields"></div>
+
+
 
 				<label for="additional-comments">Additional Comments</label>
 				<textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
@@ -97,4 +108,29 @@
 		</div>
 	</form>
 </div>
+
+<script type="text/javascript">
+	document.getElementById('reason-for-request-duties').addEventListener('change', function() {
+			var selectedValue = this.value;
+			var fields = '';
+
+			if(selectedValue === 'option2') {
+				fields = `
+						<label for="sub-selection">Choose a sub-option:</label>
+						<select id="sub-selection" name="sub-selection">
+								<option value="sub-option1">Sub-Option 1</option>
+								<option value="sub-option2">Sub-Option 2</option>
+								<option value="sub-option3">Sub-Option 3</option>
+						</select>
+				`;
+			} else if(selectedValue === 'option1') {
+					fields = `
+							<label for="field2">Field 1:</label>
+							<input type="text" id="field1" name="field2">
+					`;
+			}
+
+			document.getElementById('dynamic-fields').innerHTML = fields;
+	});
+</script>
 
