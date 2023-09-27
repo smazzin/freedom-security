@@ -48,13 +48,13 @@
 				<input type="text" id="service-dates" name="service-dates" required>
 				
 				<label for="shift-times">Shift Times *</label>
-				<textarea name="shift-times" id="shift-tiems" cols="30" rows="10" required></textarea>
+				<textarea name="shift-times" id="shift-tiems" cols="30" rows="5" required></textarea>
 				
 				<label for="number-of-officers-required">Number of Officers Per Shift Required *</label>
 				<input type="text" id="number-of-officers-required" name="number-of-officers-required" required>
 				
 				<label for="guard-duties">What are the guard duties and where do you want the guard located?</label>
-				<textarea name="guard-duties" id="guard-duties" cols="30" rows="10" required></textarea>
+				<textarea name="guard-duties" id="guard-duties" cols="30" rows="5" required></textarea>
 
 				<label for="security-guard-required">Is a Security Vehicle Required? *</label>
 				<select name="security-guard-required" id="security-guard-required" required>
@@ -80,11 +80,19 @@
 				<label for="any-security-issues">Are There Service Issues (Please Explain)</label>
 				<textarea name="any-security-issues" id="any-security-issues" cols="10" rows="5"></textarea>
 
-				<label for="reason-for-request-duties">Reason for Request / Duties *</label>
-				<textarea name="reason-for-request-duties" id="reason-for-request-duties" cols="30" rows="10" required></textarea>
+				<label for="reason-for-request-duties">Reason for Request / Duties </label>
+				<textarea name="reason-for-request-duties" id="reason-for-request-duties" cols="30" rows="5"></textarea>
+
+				<label for="fire-watch">Fire Watch</label>
+				<select id="fire-watch" name="fire-watch">
+								<option value="">--Please choose an option--</option>
+								<option value="fire-panel-down">Fire Panel down</option>
+								<option value="burglar-alarm-down">Burglar Alarm down </option>
+								<option value="alarm-system-down">Alarm System down </option>
+				</select>
 
 				<label for="additional-comments">Additional Comments</label>
-				<textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
+				<textarea name="additional-comments" id="additional-comments" cols="30" rows="5"></textarea>
 
 				<label for="po-cost-center">PO# / Cost Center *</label>
 				<input type="text" id="po-cost-center">
