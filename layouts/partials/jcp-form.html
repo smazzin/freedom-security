@@ -80,8 +80,8 @@
 				<label for="any-security-issues">Are There Service Issues (Please Explain)</label>
 				<textarea name="any-security-issues" id="any-security-issues" cols="10" rows="5"></textarea>
 
-				<label for="reason-for-request-duties">Reason for Request / Duties </label>
-				<textarea name="reason-for-request-duties" id="reason-for-request-duties" cols="30" rows="5"></textarea>
+				{{/*  <label for="reason-for-request-duties">Reason for Request / Duties </label>
+				<textarea name="reason-for-request-duties" id="reason-for-request-duties" cols="30" rows="5"></textarea>  */}}
 
 				<label for="fire-watch">Reason for coverage *</label>
 				<select id="fire-watch" name="fire-watch" required>
@@ -94,7 +94,7 @@
 
 				<div id="other-reason-container" style="display:none;">
 					<label for="other-reason-for-coverage">Other Reason for coverage</label>
-					<input type="text" id="other-reason-for-coverage" name="other-reason-for-coverage"/>
+					<textarea type="text" id="other-reason-for-coverage" name="other-reason-for-coverage" cols="30" rows="5"></textarea>
 				</div>
 			
 
@@ -104,7 +104,7 @@
 				<label for="po-cost-center">PO# / Cost Center *</label>
 				<input type="text" id="po-cost-center">
 
-				<input type="hidden" id="subject" name="subject" value="JCP Security Guard Request Form">
+				<input id="subject" type="hidden" name="subject" data-remove-prefix value="" />
 
 				<input class="btn btn-green" type="submit" value="Submit" />
 
@@ -121,5 +121,27 @@
     } else {
         otherReasonContainer.style.display = 'none';
     }
+});
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Select the dropdown and the subject input field
+    const fireWatchDropdown = document.getElementById('fire-watch');
+    const subjectInput = document.getElementById('subject');
+    
+    // Function to update the subject input value based on the selected option
+    function updateSubject() {
+        let selectedOption = fireWatchDropdown.options[fireWatchDropdown.selectedIndex].text;
+        // If "Other" is selected, use the text from the "other-reason-for-coverage" textarea
+        //if (selectedOption === 'Other') {
+        //    const otherReason = document.getElementById('other-reason-for-coverage').value;
+        //    selectedOption = otherReason ? `Other - ${otherReason}` : 'Other';
+        //}
+        subjectInput.value = `JCP Security Request - ` + selectedOption;
+    }
+    
+    // Update the subject whenever the selected option changes
+    fireWatchDropdown.addEventListener('change', updateSubject);
+    
+    // Update the subject whenever the other-reason-for-coverage textarea changes
+    document.getElementById('other-reason-for-coverage').addEventListener('input', updateSubject);
 });
 </script>
