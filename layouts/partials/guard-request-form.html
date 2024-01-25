@@ -1,5 +1,6 @@
 <div class="container-xs">
 	<form name="Guard Request Form" data-netlify="true" netlify-honeypot="bot-field" method="POST" action="/guard-request-thankyou">
+		<input id="subject" type="hidden" name="subject" value="New guard request from %{formName} (%{submissionId})" data-remove-prefix />
 		<div class="grid">
 			<div class="column">
 				<label for="management-company-name">Management Company Name *</label>
@@ -103,8 +104,6 @@
 
 				<label for="po-number">P.O. Number for Billing Purposes</label>
 				<input type="text" id="po-number" name="P.O. Number for Billing Purposes">
-
-				<input id="subject" type="hidden" name="subject" value="New guard request from %{formName} (%{submissionId})" data-remove-prefix value="" />
 
 				<input class="btn btn-green" type="submit" value="Submit" />
 
