@@ -9,3 +9,4 @@ layout: contact-jcp
 
 # JCP Security Guard Request Form
 
+If you do not get a call within 5 minutes, please call 833-552-3733.
