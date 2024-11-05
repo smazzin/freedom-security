@@ -1,6 +1,6 @@
 <div class="container-xs">
 	{{/*  <form name="jcp-request-form" data-netlify="true" netlify-honeypot="bot-field" method="POST" action="/jcp-thankyou">  */}}
-	<form name="jcp-request-form" data-netlify="true" netlify-honeypot="bot-field" method="POST">
+	<form name="jcp-request-form" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" method="POST">
 		<div class="grid">
 			<div class="column">
 				<label for="client-company-name">Client Company Name *</label>
@@ -8,12 +8,17 @@
 				
 				<label for="requestor-full-name">Requestor's Full Name *</label>
 				<input type="text" id="requestor-full-name" name="requestor-full-name" required/>
-				
 				<label for="requestor-phone-number">Requestor's Phone Number *</label>
 				<input type="tel" id="requestor-phone-number" name="requestor-phone-number" required/>
-				
-				<label for="name-of-rapd">Name of RAPD that approved this request *</label>
-				<input type="text" id="name-of-rapd" name="Name of RAPD that approved this request" required/>
+				<div>
+					<label for="name-of-rapd">Please list the name of the Group AP Sr Director or EVP that approved this request. *</label>
+					<input type="text" id="name-of-rapd" name="Name of RAPD that approved this request" required/>
+				</div>
+				<div>
+					<label for="email-approval">Please attach the email approval to this request form. </label>
+					<p>We will need this email approval to fulfill your request. If you have troubles uploading the approval email as an attachment please forward the email approval to george@freedomsecuritysolutions.com to expedite your request.</p>
+					<input id="email-approval" name="Email Approval" type="file" />
+				</div>
 
 				<label for="requestor-email-address">Requestor's Email Address *</label>
 				<input type="email" id="requestor-email-address" name="requestor-email-address" required/>
@@ -57,7 +62,7 @@
 				<label for="number-of-officers-required">Number of Officers Per Shift Required *</label>
 				<input type="text" id="number-of-officers-required" name="number-of-officers-required" required>
 				
-				<label for="guard-duties">What are the guard duties and where do you want the guard located?</label>
+				<label for="guard-duties">What are the guard duties and where do you want the guard located?*</label>
 				<textarea name="guard-duties" id="guard-duties" cols="30" rows="5" required></textarea>
 
 				<label for="security-guard-required">Is a Security Vehicle Required? *</label>
